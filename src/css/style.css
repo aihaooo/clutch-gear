@@ -1,0 +1,36 @@
+@import './variables.css';
+@import './blocks/header.css';
+@import './blocks/hero.css';
+@import './blocks/catalogue.css';
+
+body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--color-bg);
+}
+
+.container {
+    margin: 0 auto;
+    padding: var(--container-padding);
+    max-width: var(--container-width);
+}
+
+.title {
+    font-family: var(--font-body);
+}
+
+.title__large {
+    font-family: var(--font-display);
+}
+
+.title__sub {
+    font-size: var(--fs-lg);
+}
+
+.section-title {
+    font-size: var(--fs-h2);
+    text-align: center;
+    color: var(--color-text);
+    font-family: var(--font-display)
+}

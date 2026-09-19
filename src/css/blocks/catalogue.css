@@ -1,0 +1,53 @@
+.catalogue {
+    padding: 0 0 20px 0;
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.catalogue__cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+
+}
+
+.catalogue__card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-surface);
+    border: 1px var(--color-border) solid;
+    border-radius: var(--radius-lg);
+    align-items: center;
+    min-height: 300px;
+
+    color: var(--color-text);
+
+    gap: 20px;
+}
+
+.card__title {
+    text-align: center;
+    margin-top: var(--space-5);
+}
+
+.catalogue__card-image {
+    display: flex;
+    max-width: 200px;
+    object-fit: contain;
+    aspect-ratio: 4/4;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .catalogue__cards-wrapper {
+        flex-direction: row;
+    }
+
+    .catalogue__cards-wrapper>* {
+        flex: 1;
+        min-width: 0;
+    }
+}
