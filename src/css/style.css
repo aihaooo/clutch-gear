@@ -3,6 +3,8 @@
 @import './blocks/hero.css';
 @import './blocks/catalogue.css';
 @import './blocks/modal.css';
+@import './blocks/benefits.css';
+@import './blocks/footer.css';
 
 body {
     height: 100%;
